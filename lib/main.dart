@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:travel_ui/screens/home_screen.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  SystemChrome.setSystemUIOverlayStyle( SystemUiOverlayStyle(
+  statusBarColor: Colors.grey[100],
+  statusBarIconBrightness: Brightness.dark
+  ));
+  
+  runApp(MyApp());
+} 
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
