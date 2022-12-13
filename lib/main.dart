@@ -7,6 +7,8 @@ void main() {
   statusBarColor: Colors.grey[100],
   statusBarIconBrightness: Brightness.dark
   ));
+
+  //SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
   
   runApp(MyApp());
 } 
