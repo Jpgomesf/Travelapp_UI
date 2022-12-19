@@ -1,17 +1,17 @@
 class Activity {
   String imageUrl;
   String name;
-  String? type;
+  String type;
   List<String> startTimes;
-  int? rating;
-  int? price;
+  int rating;
+  int price;
 
   Activity({
     required this.imageUrl,
     required this.name,
-    this.type,
+    required this.type,
     required this.startTimes,
-    this.rating,
-    this.price,
+    required this.rating,
+    required this.price,
   });
 }

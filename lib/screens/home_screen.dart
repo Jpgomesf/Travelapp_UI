@@ -2,6 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:travel_ui/widgets/hotel_carousel.dart';
 
@@ -56,6 +57,14 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        title: Text('Travel Ui', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24),),
+        centerTitle: true,
+        backgroundColor: Theme.of(context).primaryColor,
+        elevation: 1,
+        systemOverlayStyle: const SystemUiOverlayStyle(statusBarColor: Color(0xFF3EBACE), statusBarIconBrightness: Brightness.dark),
+      ),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.symmetric(vertical: 30.0),
